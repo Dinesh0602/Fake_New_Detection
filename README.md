@@ -1,11 +1,6 @@
 # 📰 Fake News Detection using DeBERTa, XGBoost, and Logistic Regression
 
-## 📽️ Project Demo
-A short demonstration of the Fake News Detection System is included [here](./video1164773098.mp4).
 
-GitHub Repository: [Fake News Detection](https://github.com/Dinesh0602/Fake_New_Detection.git)
-
----
 
 ## 🔍 Overview
 
@@ -23,7 +18,7 @@ The final interface is built using **Streamlit** to allow user-friendly real-tim
 | Contributor            | Contribution Areas                                |
 |------------------------|---------------------------------------------------|
 | **Vinuta Patil**       | Built and fine-tuned the DeBERTa model in `deBERTa/` |
-| **Navya Karagada**     | Developed the XGBoost classifier in `XGBoost/`        |
+| **Navya Katragada**     | Developed the XGBoost classifier in `XGBoost/`        |
 | **Dinesh Buruboyina**  | Implemented Logistic Regression, developed Streamlit UI, and integrated the full system |
 
 All team members collaborated on model evaluation, testing, and documentation.
@@ -106,11 +101,12 @@ streamlit run app.py
 
 ## 📊 Model Evaluation
 
-| Model               | Evaluation Summary |
-|---------------------|---------------------|
-| **DeBERTa**         | Highest accuracy thanks to contextual embeddings. |
-| **XGBoost**         | Balanced performance with fast inference. |
-| **Logistic Regression** | Lightweight, used for real‑time predictions in the UI. |
+| Model                                                  | Accuracy | F1 Score | Key Take-aways                                                  |
+|--------------------------------------------------------|:-------:|:-------:|----------------------------------------------------------------|
+| **DeBERTa-v3 Small (Fine-Tuned)**                      | **99.58** | **99.60** | Best overall; deep contextual embeddings drive near-perfect results. |
+| **SentenceTransformer + Logistic Regression**          | 91.13   | 91.37   | Strong baseline with fast, lightweight inference.              |
+| **SentenceTransformer + XGBoost**                      | 88.43   | 88.44   | Good trade-off between interpretability and performance.       |
+
 
 ---
 
