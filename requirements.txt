@@ -1,0 +1,7 @@
+streamlit==1.34.0
+sentencepiece          # ← this line was missing
+torch
+transformers
+sentence-transformers
+xgboost
+scikit-learn
